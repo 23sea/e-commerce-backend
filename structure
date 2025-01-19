@@ -1,0 +1,30 @@
+e-commerce-backend/
+│
+├── src/
+│   ├── app.module.ts         # โมดูลหลักที่รวมทุกโมดูลในระบบ
+│   ├── main.ts               # จุดเริ่มต้นของแอป
+│   ├── products/             # โมดูลสินค้า
+│   │   ├── product.entity.ts # Entity สำหรับจัดการข้อมูลสินค้า
+│   │   ├── products.controller.ts  # Controller สำหรับ API ของสินค้า
+│   │   ├── products.service.ts     # Service สำหรับธุรกิจของสินค้า
+│   │   ├── products.module.ts      # โมดูลที่เกี่ยวกับสินค้า
+│   │
+│   ├── users/                # โมดูลผู้ใช้
+│   │   ├── user.entity.ts    # Entity สำหรับข้อมูลผู้ใช้
+│   │   ├── users.controller.ts    # Controller สำหรับ API ของผู้ใช้
+│   │   ├── users.service.ts       # Service สำหรับธุรกิจของผู้ใช้
+│   │   ├── users.module.ts        # โมดูลที่เกี่ยวกับผู้ใช้
+│   │
+│   ├── orders/               # โมดูลการจัดการคำสั่งซื้อ
+│   │   ├── order.entity.ts   # Entity สำหรับข้อมูลคำสั่งซื้อ
+│   │   ├── orders.controller.ts   # Controller สำหรับ API ของคำสั่งซื้อ
+│   │   ├── orders.service.ts      # Service สำหรับธุรกิจของคำสั่งซื้อ
+│   │   ├── orders.module.ts       # โมดูลที่เกี่ยวกับคำสั่งซื้อ
+│   │
+│   └── supabase/             # Service สำหรับเชื่อมต่อกับ Supabase
+│       └── supabase.service.ts   # เชื่อมต่อกับ Supabase API
+│
+├── node_modules/             # Node modules
+├── package.json              # ตั้งค่าต่าง ๆ ของโปรเจกต์
+├── tsconfig.json             # การตั้งค่าการคอมไพล์ TypeScript
+└── .env                      # ตั้งค่าตัวแปรสภาพแวดล้อม เช่น Supabase URL และ Key
